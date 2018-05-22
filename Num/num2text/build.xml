@@ -11,7 +11,7 @@
 </target>
 
 <target name="compress" depends="compile">
-        <jar destfile="dist/num2word.jar" basedir="build/classes" />
+        <war destfile="dist/num2word.war" basedir="build/classes" />
 </target>
 <target name="execute" depends="compile">
     <java classname="com.vaannila.helloworld.HelloWorld" classpath="build/classes" />
@@ -20,10 +20,4 @@
     <delete dir="build" />
     <delete dir="dist" />
 </target>
-  <target name="all">
-    <war-builder projectfolder="."
-                 destinationfolder="bin/war"
-                 warfile="dist/num2word.war"
-                 classesFolder="classes-folder"/>
-  </target>
 </project>
