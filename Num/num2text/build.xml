@@ -11,7 +11,7 @@
 </target>
 
 <target name="compress" depends="compile">
-        <war destfile="dist/num2word.war" basedir="build/classes" />
+        <jar destfile="dist/num2wordjar" basedir="build/classes" />
 </target>
 <target name="execute" depends="compile">
     <java classname="com.vaannila.helloworld.HelloWorld" classpath="build/classes" />
