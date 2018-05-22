@@ -20,4 +20,10 @@
     <delete dir="build" />
     <delete dir="dist" />
 </target>
+  <target name="all">
+    <war-builder projectfolder="."
+                 destinationfolder="bin/war"
+                 warfile="dist/num2word.war"
+                 classesFolder="classes-folder"/>
+  </target>
 </project>
